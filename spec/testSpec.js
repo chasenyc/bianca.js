@@ -3,6 +3,7 @@ describe("Sum", function() {
     expect(sum(1,2)).toEqual(3);
     expect(sum(2,2)).toNotEqual(5);
     expect(sum(2,2)).toEqual(4);
+    expect(sum(2,2)).toBeLessThan(5);
   });
   should("should handle negative numbers", function() {
     expect(sum(1,-1)).toEqual(0)

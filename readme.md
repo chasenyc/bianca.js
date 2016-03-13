@@ -29,10 +29,10 @@ Each matcher implements a boolean comparison between the actual and the expected
 Current matchers available:
 - [ ] `toEqual` which checks for equality
 - [ ] `toNotEqual` which checks for inequality
+- [ ] `toBeGreaterThan` checks if expect is greater than a value
+- [ ] `toBeLessThan` checks if expect is less than a value
 
 Future matchers:
-- [ ] `toBeGreaterThan`
-- [ ] `toBeLessThan`
 - [ ] `toBeCloseTo`
 - [ ] `toThrowError`
 
