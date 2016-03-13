@@ -54,6 +54,10 @@ li.count {
   display: inline-block;
 }
 
+li.should {
+  margin-left: 10px;
+}
+
 .summary {
   padding: 5px;
   color: #FFF;
