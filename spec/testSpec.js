@@ -1,4 +1,4 @@
-it("Sum", function() {
+describe("Sum", function() {
   should("handle simple addition", function() {
     expect(sum(1,2)).toEqual(3);
     expect(sum(2,2)).toNotEqual(5);
@@ -15,7 +15,7 @@ it("Sum", function() {
 });
 
 
-it("Reverse", function() {
+describe("Reverse", function() {
   should( "handles small string", function() {
     expect(reverse('alex')).toEqual('xela');
     expect(reverse('aacd')).toEqual('dcaa');
