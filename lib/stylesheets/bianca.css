@@ -13,6 +13,7 @@
 
 body {
   font-family: "Roboto", sans-serif;
+  font-size: 14px;
 }
 
 #logo {
@@ -26,4 +27,60 @@ ul {
 li {
   display: block;
   padding-left: 0;
+  margin: 5px;
+}
+
+ul#results {
+  padding: 5px;
+}
+
+.pass-bg {
+  background: #83AF9B;
+}
+
+.fail-bg {
+  background: #DA4A38;
+}
+
+ul#count {
+  border-top: .5px solid #AAA;
+}
+
+li.count {
+  width: 10;
+  height: 10;
+  margin: 5px;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+.summary {
+  padding: 5px;
+  color: #FFF;
+}
+
+li.it {
+  font-weight: 500;
+}
+
+li.pass {
+  color: #83AF9B;
+}
+
+li.fail {
+  color: #DA4A38;
+}
+
+.fail-reason {
+  color: #000;
+  margin-left: 5px;
+}
+
+.fail-stack {
+  color: #000;
+  margin-left: 5px;
+  font-family: monospace;
+  background: #ddd;
+  display: inline-block;
+  padding: 5px;
 }
