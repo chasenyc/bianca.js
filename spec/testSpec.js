@@ -27,7 +27,10 @@ describe("Reverse", function() {
   should("takes an empty string", function() {
     expect(reverse('')).toEqual('');
   });
-  should("throw an error if given an array", function () {
-    // expect(reverse([1,2,3])).toThrowError();
+  should("foo does not throw an error", function () {
+    var foo = function () {
+      // throw 'bar'
+    }
+    expect(foo).toNotThrowError()
   })
 });

@@ -32,9 +32,10 @@ Current matchers available:
 - [x] `toBeGreaterThan` checks if greater than a value
 - [x] `toBeLessThan` checks if less than a value
 - [x] `toBeCloseTo` checks if close to a given target, takes in a threshold
+- [x] `toThrowError` checks if a function throws an error
+- [x] `toNotThrowError` checks if a function does not throw an error
 
 Future matchers:
-- [ ] `toThrowError`
 
 
 [preview]:/lib/assets/preview.png "bianca preview"
