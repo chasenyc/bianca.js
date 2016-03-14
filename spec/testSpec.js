@@ -1,36 +1,37 @@
-describe("Sum", function() {
-  should("handle simple addition", function() {
-    expect(sum(1,2)).toEqual(3);
-    expect(sum(2,2)).toNotEqual(5);
-    expect(sum(2,2)).toEqual(4);
-    expect(sum(2,2)).toBeLessThan(5);
-    expect(sum(2,2)).toBeCloseTo(3, 8);
-  });
-  should("should handle negative numbers", function() {
-    expect(sum(1,-1)).toEqual(0)
-    expect(sum(-3,-1)).toEqual(-4)
-    expect(sum(-3,-1)).toNotEqual(-4)
-  });
-  should("should handle one element", function() {
-    expect(sum(2)).toEqual(2)
-    expect(sumo(1)).toBeGreaterThan(0)
-  });
-});
-
-
-describe("Reverse", function() {
-  should( "handles small string", function() {
-    expect(reverse('alex')).toEqual('xela');
-    expect(reverse('aacd')).toEqual('dcaa');
-    expect(reverse('xax')).toNotEqual('axa');
-  });
-  should("takes an empty string", function() {
-    expect(reverse('')).toEqual('');
-  });
-  should("foo does not throw an error", function () {
-    var foo = function () {
-      // throw 'bar'
-    }
-    expect(foo).toNotThrowError()
-  })
-});
+// describe("Basics", function () {
+//   should("toEqual checks if argument passed to expect equals second argument", function() {
+//     var life = 42;
+//
+//     expect(life).toEqual(42);
+//   })
+//
+//   should("toNotEqual checks that there is not equality", function() {
+//     var sum = function(numOne, numTwo) {
+//       return (numOne + numTwo);
+//     }
+//     expect(sum(2,2)).toNotEqual(5);
+//   })
+//
+//   should("toBeGreaterThan and toBeLessThan work as expected", function() {
+//     var a = 2;
+//     expect(a).toBeGreaterThan(1);
+//     expect(a).toBeLessThan(3);
+//   })
+//
+//   should("toBeCloseTo takes in a threshold and a target", function() {
+//     var a = 2;
+//     expect(a).toBeCloseTo(1, 3);
+//   })
+//
+//   should("toThrowError checks if a function throws an error when invoked", function() {
+//     function foo() {
+//       throw 'bar'
+//     }
+//
+//     function bar() {
+//       return 'foo'
+//     }
+//     expect(foo).toThrowError();
+//     expect(bar).toNotThrowError();
+//   })
+// });
