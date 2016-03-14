@@ -35,7 +35,6 @@ Current matchers available:
 - [x] `toThrowError` checks if a function throws an error
 - [x] `toNotThrowError` checks if a function does not throw an error
 
-Future matchers:
 
 
 [preview]:/lib/assets/preview.png "bianca preview"
