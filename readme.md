@@ -27,13 +27,13 @@ Expectations are constructed with the `expect` function. It takes in a value and
 Each matcher implements a boolean comparison between the actual and the expected. This will then lead to the passing or failing of the spec.
 
 Current matchers available:
-- [ ] `toEqual` which checks for equality
-- [ ] `toNotEqual` which checks for inequality
-- [ ] `toBeGreaterThan` checks if expect is greater than a value
-- [ ] `toBeLessThan` checks if expect is less than a value
+- [x] `toEqual` which checks for equality
+- [x] `toNotEqual` which checks for inequality
+- [x] `toBeGreaterThan` checks if greater than a value
+- [x] `toBeLessThan` checks if less than a value
+- [x] `toBeCloseTo` checks if close to a given target, takes in a threshold
 
 Future matchers:
-- [ ] `toBeCloseTo`
 - [ ] `toThrowError`
 
 

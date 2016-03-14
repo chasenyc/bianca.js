@@ -4,6 +4,7 @@ describe("Sum", function() {
     expect(sum(2,2)).toNotEqual(5);
     expect(sum(2,2)).toEqual(4);
     expect(sum(2,2)).toBeLessThan(5);
+    expect(sum(2,2)).toBeCloseTo(3, 8);
   });
   should("should handle negative numbers", function() {
     expect(sum(1,-1)).toEqual(0)
@@ -11,7 +12,8 @@ describe("Sum", function() {
     expect(sum(-3,-1)).toNotEqual(-4)
   });
   should("should handle one element", function() {
-    expect(sumo(1)).toEqual(1)
+    expect(sum(2)).toEqual(2)
+    expect(sumo(1)).toBeGreaterThan(0)
   });
 });
 
@@ -25,4 +27,7 @@ describe("Reverse", function() {
   should("takes an empty string", function() {
     expect(reverse('')).toEqual('');
   });
+  should("throw an error if given an array", function () {
+    // expect(reverse([1,2,3])).toThrowError();
+  })
 });

@@ -5,5 +5,10 @@ var sum = function(numOne, numTwo) {
 }
 
 var reverse = function(s) {
+  if (typeof s !== "string") {
+    throw {
+        message: "must be a string!"
+    }
+  }
   return s.split("").reverse().join("");
 }
